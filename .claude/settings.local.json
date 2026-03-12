@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"C:\\\\Users\\\\weber\\\\claude_code_project\\\\claude_code_treasure_game-initial\" && npm run build 2>&1)",
+      "Bash(cd \"C:\\\\Users\\\\weber\\\\claude_code_project\\\\claude_code_treasure_game-initial\" && npm run dev)"
+    ]
+  }
+}
