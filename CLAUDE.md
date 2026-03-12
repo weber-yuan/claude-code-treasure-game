@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ```bash
 npm install      # Install dependencies
 npm run dev      # Start dev server at http://localhost:3000 (auto-opens browser)
-npm run build    # Build to build/ directory
+npm run build    # Build to dist/ directory
 ```
 
 No test or lint commands are configured.
@@ -54,3 +54,10 @@ Single-page React + TypeScript game built with Vite (SWC compiler). All game log
 **Path Aliases (`vite.config.ts`):**
 - `@/` → `src/` (e.g., `@/components/ui/button`)
 - All third-party packages also have version-pinned aliases (e.g., `motion@x.x.x` → `motion`); this is boilerplate and can be ignored
+- `base` is set to `/claude-code-treasure-game/` for GitHub Pages; `outDir` is `dist/`
+
+**Deployment:**
+- GitHub Pages: https://weber-yuan.github.io/claude-code-treasure-game/
+- GitHub Repo: https://github.com/weber-yuan/claude-code-treasure-game
+- CI/CD: `.github/workflows/deploy.yml` — auto-deploys on push to `master`
+- Custom commands: `/deploy_github`, `/deploy_vercel`
